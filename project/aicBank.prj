@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<name> AicBank Issuer Testing </name>
+	<field_def file="aicBank/aicBankFieldDef.xml" />
+	<transaction_cases path="aicBank/trans_cases" />
+	<management_cases path="aicBank/management_cases" />
+	<dictionary path="aicBank/dictionary" />
+	<communication>
+		<type> shortterm_client </type>
+		<remote ip="127.0.0.1" port="8888" />
+		<message_head_pattern>
+			<length encode="ASCII"> 4 </length>
+		</message_head_pattern>
+	</communication>
+	<pinblock_mode> 01 </pinblock_mode>
+	<zmk> 11111111111111111111111111111111 </zmk>
+	<zpk> AEAB3434B0C2EC34B016E52AA238FBE5 </zpk>
+	<zak> a80b6b5494018a52 </zak>
+
+	<mk_ac> 3D4AFB252343DC196479F24CF179CD92 </mk_ac>
+
+	<mk_smi> D9A2A23183CDCE020B5467F7E6CB25D3 </mk_smi>
+
+	<mk_smc> 6D20D9FD191080D0BC762F02F1BCCB83 </mk_smc>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+
+	<store_table_fields>
+		<field index="11" />
+	</store_table_fields>
+
+	<org> 000080000011 </org>
+	<version> v1.0.0 </version>
+	<branch> 0001 </branch>
+	<operator> 001 </operator>
+</configuration>

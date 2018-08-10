@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<name> Visa Issure Testing </name>
+	<field_def file="visa/VisaFieldDef.xml" />
+	<transaction_cases path="visa/trans_cases" />
+	<management_cases path="visa/management_cases" />
+	<dictionary path="visa/dictionary" />
+	<communication>
+		<type> duplex_server </type>
+		<local port="8002" />
+
+		<message_head_pattern>
+			<length encode="BINARY"> 2 </length>
+			<fill char="0x00"> 2 </fill>
+		</message_head_pattern>
+	</communication>
+	<pinblock_mode> 01 </pinblock_mode>
+	<zpk> 0123456789ABCDEF </zpk>
+	<zak> 04C7BA865EECA85E </zak>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+	<store_table_fields>
+		<field index="11" />
+	</store_table_fields>
+</configuration>

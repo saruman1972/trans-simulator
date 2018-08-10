@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="reversal" desc="³åÕý" >
+	<field index="0" value="0420" />
+	<field index="2" show="1" size="16" />
+	<field index="3" show="1" >
+		<copy_field >
+			<field_map>
+				<original_field index="3" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="4" show="1" />
+	<field index="7" show="1" >
+		<copy_field >
+			<field_map>
+				<original_field index="7" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="11" show="1" >
+		<copy_field >
+			<field_map>
+				<original_field index="11" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="18" show="1" value="6011" />
+	<field index="22" value="020" />
+	<field index="25" value="00" />
+	<field index="26" value="06" />
+	<field index="32" value="03112900" />
+	<field index="33" value="03112900" />
+	<field index="35" show="1" />
+	<field index="37" value="000000000000" />
+	<field index="49" show="1" value="156" />
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

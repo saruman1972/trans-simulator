@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="CARD_REPORT_ACTION_TYPE" >
+	<element value="L" desc="¿¨¹ÒÊ§±¨¸æ" />
+	<element value="S" desc="±»µÁ¿¨±¨¸æ" />
+</choices>

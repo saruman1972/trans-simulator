@@ -1,0 +1,4 @@
+<choices name="ENTRY_MODE" >
+	<element desc="manual key in" value="010" />
+	<element desc="swipe card" value="020" />
+</choices>

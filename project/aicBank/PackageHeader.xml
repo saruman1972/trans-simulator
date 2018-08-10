@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<package_header>
+	<field name="H01_ORG" value = "000064572600" />
+	<field name="H02_VERSION" value="v1.0.0" />
+	<field name="H03_TRANS_TYPE" value="1" />
+	<field name="H04_MESSAGE_TYPE" value="0" />
+	<field name="H05_DIRECTION" value="0" />
+	<field name="H06_TRANS_CODE" value="999999" />
+	<field name="H07_CHANNEL" value="00" />
+	<field name="H08_REQUEST_DATE" />
+	<field name="H09_REQUEST_TIME" />
+	<field name="H10_REQUEST_SN" />
+	<field name="H11_AIC_TIME" />
+	<field name="H12_AIC_DATE" />
+	<field name="H13_AIC_SN" />
+	<field name="H14_BRANCH" value="0001" />
+	<field name="H15_OPERATOR" value="001" />
+	<field name="H16_NODE_NO" value="001" />
+	<field name="H17_RESP_CODE" />
+	<field name="H18_RESP_DESC" />
+	<field name="H19_MAC" />
+	<field name="H20_RESERVED" />
+</package_header>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="ID_TYPE" >
+	<element value="1" desc="Éí·ÝÖ¤" />
+	<element value="2" desc="»¤ÕÕ" />
+	<element value="3" desc="»§¿Ú²¾" />
+	<element value="4" desc="¾ü¹ÙÖ¤" />
+	<element value="5" desc="Ê¿±øÖ¤" />
+	<element value="6" desc="ÎÄÖ°¸É²¿Ö¤" />
+	<element value="7" desc="¸Û°Ä¾ÓÃñÀ´ÍùÄÚµØÍ¨ÐÐÖ¤" />
+	<element value="8" desc="Ì¨ÍåÍ¬°ûÀ´ÍùÄÚµØÍ¨ÐÐÖ¤" />
+	<element value="9" desc="ÁÙÊ±Éí·ÝÖ¤" />
+	<element value="A" desc="¾¯¹ÙÖ¤" />
+	<element value="B" desc="²âÊÔÖ¤¼þ" />
+	<element value="D" desc="ÆäËüÖ¤¼þ" />
+</choices>

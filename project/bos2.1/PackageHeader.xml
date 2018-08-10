@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<package_header>
+	<field name="H01" />
+	<field name="H02" value="01" />
+	<field name="H03" />
+	<field name="H04" value="1234567890" />
+	<field name="H05" value="0123456789" />
+	<field name="H06" value="000000" />
+	<field name="H07" value="00" />
+	<field name="H08" value="00000000" />
+	<field name="H09" value="00" />
+	<field name="H10" value="00000" />
+</package_header>

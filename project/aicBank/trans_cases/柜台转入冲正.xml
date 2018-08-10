@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="OtcTransferInRv" desc="¹ñÌ¨×ªÈë³åÕý">
+	<field index="0" value="0420" />
+	<field index="2" show="1" size="16" />
+	<field index="3" value="470000" />
+	<field index="4" show="1" size="12" />
+	<field index="7" type="DATE" format="%m%d%H%M%S" />
+	<field index="11" type="TRACE_NO" start_val="1" />
+	<field index="12" type="DATE" format="%H%M%S" />
+	<field index="13" type="DATE" format="%m%d" />
+	<field index="15" type="DATE" format="%m%d" />
+	<field index="18" show="1" value="6010" />
+	<field index="22" value="020" />
+	<field index="25" value="04" />
+	<field index="28" value="D28282828" />
+	<field index="32" value="03112900" />
+	<field index="33" value="04112901" />
+	<field index="37" value="000000000000" />
+	<field index="41" value="001" />
+	<field index="42" value="100001" />
+	<field index="43" value="BANK OF AIC" />
+	<field index="49" show="1" value="156" />
+	<field index="60" value="201000005" />
+	<field index="90" show="1" subfield_type="Original Data Elements" >
+		<copy_field type="Original Data Elements" >
+			<field_map>
+				<original_field index="0" />
+				<target_field name="Original Message Type" />
+			</field_map>
+			<field_map>
+				<original_field index="11" />
+				<target_field name="Original System Trace Number" />
+			</field_map>
+			<field_map>
+				<original_field index="7" />
+				<target_field name="Original System Date Time" />
+			</field_map>
+			<field_map>
+				<original_field index="32" />
+				<target_field name="Original Acquirer Institution Identification Code" />
+			</field_map>
+			<field_map>
+				<original_field index="33" />
+				<target_field name="Original Forward Institution Identification Code" />
+			</field_map>
+		</copy_field>
+	</field>	<field index="100" value="1001001001" />
+	<field index="102" value="888102888" />
+	<field index="103" value="9999910399999" />
+	<field index="121" value="555121555" />
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

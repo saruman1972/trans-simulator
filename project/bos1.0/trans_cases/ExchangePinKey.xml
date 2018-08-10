@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="ResetPinKey" desc="ÖØÖÃPINÃÜÔ¿(single des)" mac_fields="0 7 11 39 53 70 100">
+	<field index="0" value="0800" />
+	<field index="7" type="DATE" format="%m%d%H%M%S" />
+	<field index="11" type="TRACE_NO" start_val="1" />
+	<field index="53" value="1000000000000000" show="1" />
+	<field index="70" value="101" />
+	<field index="100" value="03112900" />
+	<field index="128" />
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

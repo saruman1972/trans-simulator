@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<name> BOS1.0 Issuer Testing </name>
+	<field_def file="hx/hxFieldDef.xml" />
+	<transaction_cases path="hx/trans_cases" />
+	<management_cases path="hx/management_cases" />
+	<dictionary path="hx/dictionary" />
+	<communication>
+		<type> duplex_client </type>
+		<remote ip="10.250.1.39" port="36616" />
+		<message_head_pattern>
+			<length encode="ASCII"> 4 </length>
+		</message_head_pattern>
+	</communication>
+	<pinblock_mode> 08 </pinblock_mode>
+	<zmk>  </zmk>
+	<zpk> 1C25E98F9B9249AB </zpk>
+	<zak> 04C7BA865EECA85E </zak>
+
+	<mk_ac> 1234567890ABCDEF1234567890ABCDEF </mk_ac>
+
+	<mk_smi> 0123456789ABCDEF0123456789ABCDEF </mk_smi>
+
+	<mk_smc> ABCDEF1234567890ABCDEF1234567890 </mk_smc>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+
+	<store_table_fields>
+		<field index="11" />
+<!--		<field index="12" />
+		<field index="41" /> -->
+	</store_table_fields>
+</configuration>

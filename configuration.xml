@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<field_def file="IsoFieldDef.xml" />
+	<case path="D:\share\simulator\cases\Sale.xml" />
+	<remote ip="10.168.4.17" port="30012" />
+	<local port="10012" />
+
+	<pinblock_mode> 08 </pinblock_mode>
+	<zpk> 1C25E98F9B9249AB </zpk>
+	<zak> 04C7BA865EECA85E </zak>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+</configuration>

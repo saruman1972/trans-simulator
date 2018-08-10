@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<name> Master Card Issuer Testing </name>
+	<field_def file="mastercard/MastercardFieldDef.xml" />
+	<transaction_cases path="mastercard/trans_cases" />
+	<management_cases path="mastercard/management_cases" />
+	<dictionary path="mastercard/dictionary" />
+	<communication>
+		<type> duplex_server </type>
+		<local port="6034" />
+
+		<message_head_pattern>
+			<length encode="BINARY"> 2 </length>
+		</message_head_pattern>
+	</communication>
+	<pinblock_mode> 01 </pinblock_mode>
+	<zpk> 0123456789ABCDEF0123456789ABCDEF </zpk>
+	<zak> 04C7BA865EECA85E </zak>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+	<store_table_fields>
+		<field index="11" />
+	</store_table_fields>
+</configuration>

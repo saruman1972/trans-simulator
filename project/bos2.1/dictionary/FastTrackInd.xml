@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="FAST_TRACK_IND" >
+	<element value="Y" desc="Ê¹ÓÃ¿ìËÙ¶Ò»»" />
+	<element value="N" desc="²»Ê¹ÓÃ¿ìËÙ¶Ò»»" />
+</choices>

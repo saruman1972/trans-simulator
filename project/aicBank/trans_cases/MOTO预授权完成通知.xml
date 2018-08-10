@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="MotoAuthCompAdv" desc="MOTOÔ¤ÊÚÈ¨Íê³ÉÍ¨Öª">
+	<field index="0" value="0220" />
+	<field index="2" show="1" size="16" />
+	<field index="3" value="000000" />
+	<field index="4" show="1" size="12" />
+	<field index="5" show="1" size="12" />
+	<field index="7" type="DATE" format="%m%d%H%M%S" />
+	<field index="11" type="TRACE_NO" start_val="1" />
+	<field index="12" type="DATE" format="%H%M%S" />
+	<field index="13" type="DATE" format="%m%d" />
+	<field index="14"  show="1" type="DATE" size="4"/>
+	<field index="15" type="DATE" format="%H%M%S" />
+	<field index="18" show="1" value="7011" />
+	<field index="22" value="010" />
+	<field index="25" value="06" />
+	<field index="26" value="06" />
+	<field index="32" value="03112900" />
+	<field index="33" value="03112900" />
+	<field index="36" value=" " />
+	<field index="37" />
+	<field index="38" />
+	<field index="39" />
+	<field index="41" value="001" />
+	<field index="42" value="100001" />
+	<field index="43" value="AIC" />
+	<field index="48" />
+	<field index="49" show="1" value="156" />
+	<field index="50" show="1" value="156" />
+	<field index="53" type="SECURITY_INFO" />
+	<field index="54" />
+	<field index="60" />
+    <field index="90" show="1"  subfield_type="Original Data Elements" >
+        <copy_field type="Original Data Elements" >
+            <field_map>
+                <original_field index="0" />
+                <target_field name="Original Message Type" />
+            </field_map>
+            <field_map>
+                <original_field index="11" />
+                <target_field name="Original System Trace Number" />
+            </field_map>
+            <field_map>
+                <original_field index="7" />
+                <target_field name="Original System Date Time" />
+            </field_map>
+            <field_map>
+                <original_field index="32" />
+                <target_field name="Original Acquirer Institution Identification Code" />
+            </field_map>
+            <field_map>
+                <original_field index="33" />
+                <target_field name="Original Forward Institution Identification Code" />
+            </field_map>
+        </copy_field>
+    </field>
+	<field index="102" />
+	<field index="103" />
+</iso8583>
+

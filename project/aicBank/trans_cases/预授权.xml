@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="PosPreAuth" desc="POSÔ¤ÊÚÈ¨">
+	<field index="0" value="0100" />
+	<field index="2" show="1" size="16" />
+	<field index="3" value="030000" />
+	<field index="4" show="1" size="12" />
+	<field index="5" show="1" size="12" />
+	<field index="7" type="DATE" format="%m%d%H%M%S" />
+	<field index="11" type="TRACE_NO" start_val="1" />
+	<field index="12" type="DATE" format="%H%M%S" />
+	<field index="13" type="DATE" format="%m%d" />
+	<field index="15" type="DATE" format="%H%M%S" />
+	<field index="18" show="1" value="7011" />
+	<field index="22" value="020" />
+	<field index="25" value="06" />
+	<field index="26" value="06" />
+	<field index="32" value="03112900" />
+	<field index="33" value="03112900" />
+	<field index="35" show="1" />
+	<field index="36" value=" " />
+	<field index="37" />
+	<field index="38" />
+	<field index="39" />
+	<field index="41" value="001" />
+	<field index="42" value="100001" />
+	<field index="43" value="AIC" />
+	<field index="48" />
+	<field index="49" show="1" value="156" />
+	<field index="50" show="1" value="156" />
+	<field index="53" type="SECURITY_INFO" />
+	<field index="54" />
+	<field index="60" />
+	<field index="90" />
+	<field index="102" />
+	<field index="103" />
+</iso8583>
+

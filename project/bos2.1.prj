@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<name> BOS2.1 Issuer Testing </name>
+	<field_def file="bos2.1/Bos21FieldDef.xml" />
+	<transaction_cases path="bos2.1/trans_cases" />
+	<management_cases path="bos2.1/management_cases" />
+	<dictionary path="bos2.1/dictionary" />
+	<communication>
+		<type> simplex </type>
+		<remote ip="127.0.0.1" port="8888" />
+		<local port="26616" />
+
+		<message_head_pattern>
+			<length encode="ASCII"> 4 </length>
+		</message_head_pattern>
+	</communication>
+	<pinblock_mode> 08 </pinblock_mode>
+	<zpk> 1C25E98F9B9249AB </zpk>
+	<zak> 04C7BA865EECA85E </zak>
+
+	<mk_ac> 1234567890ABCDEF1234567890ABCDEF </mk_ac>
+
+	<mk_smi> 0123456789ABCDEF0123456789ABCDEF </mk_smi>
+
+	<mk_smc> ABCDEF1234567890ABCDEF1234567890 </mk_smc>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+
+	<store_table_fields>
+		<field index="11" />
+		<field index="12" />
+		<field index="41" />
+	</store_table_fields>
+</configuration>

@@ -1,0 +1,4 @@
+<choices name="COUNTRY_CODE" >
+	<element value="CHN" />
+	<element value="USA" />
+</choices>

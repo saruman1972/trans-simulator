@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="EchoTest" desc="»ØÏì²âÊÔ" keyfields="0 70" keyvalue="0800301" >
+	<field index="0" value="0810" />
+	<field index="7" >
+		<copy_field >
+			<field_map>
+				<original_field index="7" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="11" >
+		<copy_field >
+			<field_map>
+				<original_field index="11" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="33" >
+		<copy_field >
+			<field_map>
+				<original_field index="33" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="70" >
+		<copy_field >
+			<field_map>
+				<original_field index="70" />
+			</field_map>
+		</copy_field>
+	</field>
+	<field index="100" >
+		<copy_field >
+			<field_map>
+				<original_field index="70" />
+			</field_map>
+		</copy_field>
+	</field>
+</iso8583>
+

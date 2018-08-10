@@ -1,0 +1,20 @@
+<StressTestConfigure>
+		<case name="Sale" rate="75%" >
+			<amount high="10000" low="10" />
+			<currency_code value="156" />
+			<mcc value="random" />
+		</case>
+<!--
+		<case name="SaleWithPIN" rate="35%" >
+			<amount high="10000" low="10" />
+			<currency_code value="156" />
+			<pin correct_rate="100%" />
+			<mcc value="random" />
+		</case>
+-->
+		<case name="TrxnQuery" rate="35%" >
+			<amount high="10000" low="10" />
+			<currency_code value="156" />
+			<mcc value="random" />
+		</case>
+</StressTestConfigure>

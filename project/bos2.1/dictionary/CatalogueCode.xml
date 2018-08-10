@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="CATALOGUE_CODE" >
+	<element value="01" desc="»ý·Ö¼Æ»®" />
+	<element value="TUNING01" desc="tuning" />
+</choices>

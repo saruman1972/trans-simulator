@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+	<name> JCB Issuer Testing </name>
+	<field_def file="jcb/JcbFieldDef.xml" />
+	<transaction_cases path="jcb/trans_cases" />
+	<management_cases path="jcb/management_cases" />
+	<dictionary path="jcb/dictionary" />
+	<communication>
+		<type> duplex_client </type>
+		<remote ip="10.168.4.17" port="7403" />
+
+		<message_head_pattern>
+			<length encode="BINARY"> 2 </length>
+			<fill char="0x00"> 2 </fill>
+		</message_head_pattern>
+	</communication>
+	<pinblock_mode> 01 </pinblock_mode>
+	<zpk> A88ABC97F897AB20 </zpk>
+	<zak> 04C7BA865EECA85E </zak>
+
+	<trace_no> 000001 </trace_no>
+	<batch_no> 000001 </batch_no>
+	<store_table_fields>
+		<field index="11" />
+	</store_table_fields>
+</configuration>

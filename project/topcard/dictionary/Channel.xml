@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="CHANNEL" >
+	<element value="03" desc="¹ñÃæ/·ÖÐÐ" />
+	<element value="04" desc="ÍøÉÏÒøÐÐ" />
+	<element value="05" desc="POS" />
+	<element value="06" desc="ATM" />
+	<element value="07" desc="CDM" />
+	<element value="08" desc="IVR" />
+	<element value="09" desc="OTHERS" />
+	<element value="10" desc="CUP»¹¿î" />
+	<element value="11" desc="¹ñÃæÍ¨" />
+	<element value="12" desc="POS×ªÕÊ" />
+</choices>

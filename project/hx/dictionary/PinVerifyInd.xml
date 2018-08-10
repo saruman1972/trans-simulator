@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="PIN_VERIFY_IND" >
+	<element value="A" desc="ÉèÖÃÏû·ÑÃÜÂë" />
+	<element value="C" desc="È¡ÏûÏû·ÑÃÜÂë" />
+</choices>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="MotoEInquiry" desc="MOTOµç×ÓÓà¶î²éÑ¯">
+	<field index="0" value="0200" />
+	<field index="2" show="1" size="16" />
+	<field index="3" value="300000" />
+	<field index="7" type="DATE" format="%m%d%H%M%S" />
+	<field index="11" type="TRACE_NO" start_val="1" />
+	<field index="12" type="DATE" format="%H%M%S" />
+	<field index="13" type="DATE" format="%m%d" />
+	<field index="14"  show="1" type="DATE" size="4"/>
+	<field index="18" show="1" value="7011" />
+	<field index="22" value="010" />
+	<field index="25" value="42" />
+	<field index="26" value="06" />
+	<field index="32" value="03112900" />
+	<field index="33" value="03112900" />
+	<field index="37" value="000000000000" />
+	<field index="41" value="001" />
+	<field index="42" value="100001" />
+	<field index="43" value="BANK OF AIC" />
+	<field index="49" show="1" value="156" />
+	<field index="52" type="PIN" show="1" size="6" />
+	<field index="53" type="SECURITY_INFO" />
+	<field index="123" value="0000" />
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

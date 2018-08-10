@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="CashAdvance" desc="ATMÈ¡ÏÖ">
+	<field index="0" value="0100" />
+	<field index="2" show="1" size="16" />
+	<field index="3" value="010000" />
+	<field index="4" show="1" size="12" />
+	<field index="7" />
+	<field index="11" />
+	<field index="18" show="1" value="6011" />
+	<field index="19" show="1" value="840" />
+	<field index="22" value="020" />
+	<field index="25" value="00" />
+	<field index="32" value="03112900" />
+	<field index="33" value="03112900" />
+	<field index="35" show="1" />
+	<field index="37" value="000000000000" />
+	<field index="41" value="001" />
+	<field index="42" value="100001" />
+	<field index="43" value="BANK OF SHANGHAI" />
+	<field index="49" show="1" value="840" />
+	<field index="52" type="PIN" show="1" size="6" />
+	<field index="53" type="SECURITY_INFO" />
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

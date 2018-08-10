@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="OtcWithdraw" desc="¹ñÌ¨Ïú»§½áÇåÈ¡ÏÖ">
+	<field index="0" value="0200" />
+	<field index="2" show="1" size="16" />
+	<field index="3" value="110000" />
+	<field index="4" show="1" size="12" />
+	<field index="7" type="DATE" format="%m%d%H%M%S" />
+	<field index="11" type="TRACE_NO" start_val="1" />
+	<field index="12" type="DATE" format="%H%M%S" />
+	<field index="13" type="DATE" format="%m%d" />
+	<field index="14" type="DATE" format="%m%d" />
+	<field index="15" type="DATE" format="%m%d" />
+	<field index="18" show="1" value="6010" />
+	<field index="22" value="021" />
+	<field index="25" show="1" value="02" />
+	<field index="26" value="06" />
+	<field index="32" show="1" value="03112900" />
+	<field index="33" show="1" value="03112900" />
+	<field index="35" show="1" />
+	<field index="37" value="000000000000" />
+	<field index="41" value="001"  size="8" />
+	<field index="42" value="100001" size="15" />
+	<field index="43" show="1" value="BANK OF AIC" />
+	<field index="49" show="1" value="156" />
+	<field index="52" type="PIN" show="1" size="6" />
+	<field index="53" type="SECURITY_INFO" />
+	<field index="60" value="020801" />
+	<field index="61" value="030902" />
+	<field index="100" value="01020304051" />
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

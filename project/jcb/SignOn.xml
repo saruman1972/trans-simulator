@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<iso8583 name="SignOn" desc="Ç©µ½">
+	<field>
+		<index> 0 </index>
+		<value> 0800 </value>
+	</field>
+	<field>
+		<index> 2 </index>
+		<request_formula>
+			<input size="16" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="02" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 3 </index>
+		<request_formula>
+			<default> 000000 </defaul>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="03" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 4 </index>
+		<request_formula>
+			<input size="12" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="04" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 7 </index>
+		<request_formula>
+			<date_time format="%m%d%H%M%S" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="07" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 11 </index>
+		<request_formula>
+			<seq_no start_val="1" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="11" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 12 </index>
+		<request_formula>
+			<date_time format="%H%M%S" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="12" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 13 </index>
+		<request_formula>
+			<date_time format="%m%d" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="13" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 15 </index>
+		<request_formula>
+			<date_time format="%m%d" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="15" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 18 </index>
+		<request_formula>
+			<input />
+			<default> 6011 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="18" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 22 </index>
+		<request_formula>
+			<default> 020 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="22" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 25 </index>
+		<request_formula>
+			<default> 04 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="25" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 26 </index>
+		<request_formula>
+			<default> 06 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="26" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 32 </index>
+		<request_formula>
+			<input />
+			<default> 03112900 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="33" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 33 </index>
+		<request_formula>
+			<input />
+			<default> 03112900 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="33" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 35 </index>
+		<request_formula>
+			<input />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="35" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 37 </index>
+		<request_formula>
+			<seq_no start_val="1" />
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="37" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 41 </index>
+		<request_formula>
+			<input />
+			<default> 001 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="41" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 42 </index>
+		<request_formula>
+			<input />
+			<default> 100001 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="42" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 43 </index>
+		<request_formula>
+			<input />
+			<default> BANK OF SHANGHAI </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="43" />
+		</response_formula>
+	</field>
+	<field>
+		<index> 49 </index>
+		<request_formula>
+			<input />
+			<default> 156 </default>
+		</request_formula>
+		<response_formula>
+			<copy_from_trxn field="49" />
+		</response_formula>
+	</field>
+	<expect_bitmap> 0000000000000000 </expect_bitmap>
+</iso8583>
+

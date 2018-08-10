@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<field_def char_set="ebcdic" >
+	<field>
+		<name> Package Length </name>
+		<index> -9000 </index>
+		<description> Package Length </description>
+		<field_encode> FE_L </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+		<value>
+			<calculate type="LENGTH" input="PACKAGE" />
+		</value>
+	</field>
+	<field>
+		<name> Package Header Filler </name>
+		<index> -9001 </index>
+		<description> Package Header Filler </description>
+		<field_encode> FE_N </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+
+
+	<field>
+		<name> Message Type </name>
+		<index> 0 </index>
+		<description> Message Type </description>
+		<field_encode> FE_N </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> Primary Account Number </name>
+		<index> 2 </index>
+		<description> Primary Account Number </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 19 </size>
+	</field>
+	<field>
+		<name> Processing Code </name>
+		<index> 3 </index>
+		<description> Processing Code </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+	</field>
+	<field>
+		<name> Transaction Amount </name>
+		<index> 4 </index>
+		<description> Transaction Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 12 </size>
+	</field>
+	<field>
+		<name> Settlement Amount </name>
+		<index> 5 </index>
+		<description> Settlement Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 12 </size>
+	</field>
+	<field>
+		<name> Cardholder Billing Amount </name>
+		<index> 6 </index>
+		<description> Cardholder Billing Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 12 </size>
+	</field>
+	<field>
+		<name> Transaction Date And Time </name>
+		<index> 7 </index>
+		<description> Transaction Date And Time </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+		<value>
+			<calculate type="DATE_TIME" format="%m%d%H%M%S" />
+		</value>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 8 </index>
+		<description> ???????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> Settlement Conversion Rate </name>
+		<index> 9 </index>
+		<description> Settlement Conversion Rate </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> Cardholder Billing Conversion Rate </name>
+		<index> 10 </index>
+		<description> Cardholder Billing Conversion Rate </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> System Trace Number </name>
+		<index> 11 </index>
+		<description> System Trace Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+		<value>
+			<calculate type="SEQ_NO" start_val="1" />
+		</value>
+	</field>
+	<field>
+		<name> Local Transaction Time </name>
+		<index> 12 </index>
+		<description> Local Transaction Time </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+		<value>
+			<calculate type="DATE_TIME" format="%H%M%S" />
+		</value>
+	</field>
+	<field>
+		<name> Local Transaction Date </name>
+		<index> 13 </index>
+		<description> Local Transaction Date </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+		<value>
+			<calculate type="DATE_TIME" format="%m%d" />
+		</value>
+	</field>
+	<field>
+		<name> Expiry Date </name>
+		<index> 14 </index>
+		<description> Expiry Date </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> Settlement Date </name>
+		<index> 15 </index>
+		<description> Settlement Date </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+		<value>
+			<calculate type="DATE_TIME" format="%m%d" />
+		</value>
+	</field>
+	<field>
+		<name> Conversion Date </name>
+		<index> 16 </index>
+		<description> Conversion Date </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 17 </index>
+		<description> ??????????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> Merchant Type </name>
+		<index> 18 </index>
+		<description> Merchant Type </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+		<value>
+			<choices name="MCC" />
+		</value>
+	</field>
+	<field>
+		<name> Acquiring Institution Country Code </name>
+		<index> 19 </index>
+		<description> Acquiring Institution Country Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+		<value>
+			<choices name="CURRENCY_CODE" />
+		</value>
+	</field>
+	<field>
+		<name> ????????? </name>
+		<index> 20 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> ????????? </name>
+		<index> 21 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> Entry Mode </name>
+		<index> 22 </index>
+		<description> Entry Mode </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+		<value>
+			<choices name="ENTRY_MODE" />
+		</value>
+	</field>
+	<field>
+		<name> Card Sequence Number </name>
+		<index> 23 </index>
+		<description> IC Card Sequence Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> NII </name>
+		<index> 24 </index>
+		<description> NII </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> Point Of Service Condition Code </name>
+		<index> 25 </index>
+		<description> Point Of Service Condition Code </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> Point Of Service Pin Capture Code </name>
+		<index> 26 </index>
+		<description> Point Of Service Pin Capture Code </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> ????????? </name>
+		<index> 27 </index>
+		<description> ???????? </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> Transaction Fee Amount </name>
+		<index> 28 </index>
+		<description> Transaction Fee Amount </description>
+		<field_encode> FE_BCX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 9 </size>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 29 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_BCX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 9 </size>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 30 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_BCX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 9 </size>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 31 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_BCX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 9 </size>
+	</field>
+	<field>
+		<name> Acquiring Institute Identification Code </name>
+		<index> 32 </index>
+		<description> Acquiring Institute Identification Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 11 </size>
+	</field>
+	<field>
+		<name> Forwarding Institute Identification Code </name>
+		<index> 33 </index>
+		<description> Forwarding Institute Identification Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 11 </size>
+	</field>
+	<field>
+		<name> ????????? </name>
+		<index> 34 </index>
+		<description> ????????? </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 29 </size>
+	</field>
+	<field>
+		<name> Track2 Data </name>
+		<index> 35 </index>
+		<description> Track2 Data </description>
+		<field_encode> FE_BZ0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 37 </size>
+	</field>
+	<field>
+		<name> Track3 Data </name>
+		<index> 36 </index>
+		<description> Track3 Data </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 104 </size>
+	</field>
+	<field>
+		<name> Retrieval Reference Number </name>
+		<index> 37 </index>
+		<description> Retrieval Reference Number </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 12 </size>
+		<value>
+			<calculate type="SEQ_NO" start_val="1" />
+		</value>
+	</field>
+	<field>
+		<name> Authorization Identification Code </name>
+		<index> 38 </index>
+		<description> Authorization Identification Code </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+		<value>
+			<calculate type="AUTHORIZATION_CODE" />
+		</value>
+	</field>
+	<field>
+		<name> Response Code </name>
+		<index> 39 </index>
+		<description> Response Code </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+		<value>
+			<calculate type="RESPONSE_CODE" />
+		</value>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 40 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> Terminal Identification </name>
+		<index> 41 </index>
+		<description> Terminal Identification </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> Card Acceptor Terminal Identification </name>
+		<index> 42 </index>
+		<description> Card Acceptor Terminal Identification </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 15 </size>
+	</field>
+	<field>
+		<name> Card Acceptor Name And Location </name>
+		<index> 43 </index>
+		<description> Card Acceptor Name And Location </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 40 </size>
+	</field>
+	<field>
+		<name> Additional Response Data </name>
+		<index> 44 </index>
+		<description> Additional Response Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 99 </size>
+	</field>
+	<field>
+		<name> Track 1 Data </name>
+		<index> 45 </index>
+		<description> Additional Response Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 76 </size>
+	</field>
+	<field>
+		<name> Track 1 Data </name>
+		<index> 46 </index>
+		<description> Additional Response Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 76 </size>
+	</field>
+	<field>
+		<name> Additional Data </name>
+		<index> 47 </index>
+		<description> Additional Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 255 </size>
+	</field>
+	<field>
+		<name> Additional Data </name>
+		<index> 48 </index>
+		<description> Additional Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 255 </size>
+	</field>
+	<field>
+		<name> Transaction Currency Code </name>
+		<index> 49 </index>
+		<description> Transaction Currency Code </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+		<value>
+			<choices name="CURRENCY_CODE" />
+		</value>
+	</field>
+	<field>
+		<name> Settlement Currency Code </name>
+		<index> 50 </index>
+		<description> Settlement Currency Code </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+		<value>
+			<choices name="CURRENCY_CODE" />
+		</value>
+	</field>
+	<field>
+		<name> Cardholder Billing Currency Code </name>
+		<index> 51 </index>
+		<description> Cardholder Billing Currency Code </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+		<value>
+			<choices name="CURRENCY_CODE" />
+		</value>
+	</field>
+	<field>
+		<name> Pin Block </name>
+		<index> 52 </index>
+		<description> PIN Block </description>
+		<field_encode> FE_B </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+		<value>
+			<calculate type="PIN" pinblock_mode="01" />
+		</value>
+	</field>
+	<field>
+		<name> Security Related Control Information </name>
+		<index> 53 </index>
+		<description> Security Related Control Information </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 16 </size>
+		<value>
+			<calculate type="SECURITY_INFO" pinblock_mode="01" />
+		</value>
+	</field>
+	<field>
+		<name> Additional Amount </name>
+		<index> 54 </index>
+		<description> Additional Amount </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 120 </size>
+	</field>
+	<field>
+		<name> ?????????? </name>
+		<index> 55 </index>
+		<description> ???????? </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 255 </size>
+	</field>
+	<field>
+		<name> ?????????? </name>
+		<index> 56 </index>
+		<description> ???????? </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Additional Data Private </name>
+		<index> 57 </index>
+		<description> Additional Data Private </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> IC(PBOC) Data Reserved </name>
+		<index> 58 </index>
+		<description> IC(PBOC) Data Reserved </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Detail Inquiring </name>
+		<index> 59 </index>
+		<description> Detail Inquiring </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Reversed </name>
+		<index> 60 </index>
+		<description> Reversed </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 255 </size>
+	</field>
+	<field>
+		<name> Identification Number </name>
+		<index> 61 </index>
+		<description> Identification Number </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 255 </size>
+	</field>
+	<field>
+		<name> Switching Data </name>
+		<index> 62 </index>
+		<description> Switching Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Finacial Network Data </name>
+		<index> 63 </index>
+		<description> Finacial Network Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 255 </size>
+	</field>
+	<field>
+		<name> Message Authentication Code </name>
+		<index> 64 </index>
+		<description> Message Authentication Code </description>
+		<field_encode> FE_B </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> Settlement Code </name>
+		<index> 66 </index>
+		<description> Settlement Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> ?????????? </name>
+		<index> 67 </index>
+		<description> ???????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> ?????? </name>
+		<index> 68 </index>
+		<description> ??????? </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 69 </index>
+		<description> ?????? </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> Network Management Information Code </name>
+		<index> 70 </index>
+		<description> Network Management Information Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 71 </index>
+		<description> ?????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 72 </index>
+		<description> ?????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 73 </index>
+		<description> ?????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+	</field>
+	<field>
+		<name> Credits Number </name>
+		<index> 74 </index>
+		<description> Credits Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Credits Reversal Number </name>
+		<index> 75 </index>
+		<description> Credits Reversal Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Debits Number </name>
+		<index> 76 </index>
+		<description> Debits Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Debits Reversal Number </name>
+		<index> 77 </index>
+		<description> Debits Reversal Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Transfer Number </name>
+		<index> 78 </index>
+		<description> Transfer Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Transfer Reversal Number </name>
+		<index> 79 </index>
+		<description> Transfer Reversal Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Inquiries Number </name>
+		<index> 80 </index>
+		<description> Inquiries Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Authorizationa Number </name>
+		<index> 81 </index>
+		<description> Authorizationa Number </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Processing Fee Amount Of Credits </name>
+		<index> 82 </index>
+		<description> Processing Fee Amount Of Credits </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 12 </size>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 83 </index>
+		<description> ???????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Processing Fee Amount Of Debits </name>
+		<index> 84 </index>
+		<description> Processing Fee Amount Of Debits </description>
+		<field_encode> FE_N </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> ??????? </name>
+		<index> 85 </index>
+		<description> ???????? </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+	<field>
+		<name> Credits Amount </name>
+		<index> 86 </index>
+		<description> Credits Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 16 </size>
+	</field>
+	<field>
+		<name> Credits Reversal Amount </name>
+		<index> 87 </index>
+		<description> Credits Reversal Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 16 </size>
+	</field>
+	<field>
+		<name> Debits Amount </name>
+		<index> 88 </index>
+		<description> Debits Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 16 </size>
+	</field>
+	<field>
+		<name> Debits Reversal Amount </name>
+		<index> 89 </index>
+		<description> Debits Reversal Amount </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 16 </size>
+	</field>
+	<field>
+		<name> Original Data Elements </name>
+		<index> 90 </index>
+		<description> Original Data Elements </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 42 </size>
+		
+		<sub_fields>
+			<sub_field_type name="Original Data Elements" desc="Original Data Elements">
+				<sub_field>
+					<name> Original Message Type </name>
+					<field_encode> FE_N </field_encode>
+					<field_type> FT_FIXED </field_type>
+					<size> 4 </size>
+				</sub_field>
+				<sub_field>
+					<name> Original System Trace Number </name>
+					<field_encode> FE_N </field_encode>
+					<field_type> FT_FIXED </field_type>
+					<size> 6 </size>
+				</sub_field>
+				<sub_field>
+					<name> Original System Date Time </name>
+					<field_encode> FE_N </field_encode>
+					<field_type> FT_FIXED </field_type>
+					<size> 10 </size>
+				</sub_field>
+				<sub_field>
+					<name> Original Acquirer Institution Identification Code </name>
+					<field_encode> FE_N </field_encode>
+					<field_type> FT_FIXED </field_type>
+					<size> 11 </size>
+				</sub_field>
+				<sub_field>
+					<name> Original Forward Institution Identification Code </name>
+					<field_encode> FE_N </field_encode>
+					<field_type> FT_FIXED </field_type>
+					<size> 11 </size>
+				</sub_field>
+			</sub_field_type>
+		</sub_fields>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 91 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 92 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 93 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 5 </size>
+	</field>
+	<field>
+		<name> ???????? </name>
+		<index> 94 </index>
+		<description> ?????????? </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 7 </size>
+	</field>
+	<field>
+		<name> Replacement Amounts </name>
+		<index> 95 </index>
+		<description> Replacement Amounts </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 42 </size>
+	</field>
+	<field>
+		<name> Message Security Code </name>
+		<index> 96 </index>
+		<description> Message Security Code </description>
+		<field_encode> FE_B </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> Net Settlement Amount </name>
+		<index> 97 </index>
+		<description> Net Settlement Amount </description>
+		<field_encode> FE_BCX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 17 </size>
+	</field>
+	<field>
+		<name> ?????????? </name>
+		<index> 98 </index>
+		<description> ????????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 25 </size>
+	</field>
+	<field>
+		<name> Settlement Institution Identification Code </name>
+		<index> 99 </index>
+		<description> Settlement Institution Identification Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 11 </size>
+	</field>
+	<field>
+		<name> Receiving Institution Identification Code </name>
+		<index> 100 </index>
+		<description> Receiving Institution Identification Code </description>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 11 </size>
+	</field>
+	<field>
+		<name> ??????????? </name>
+		<index> 101 </index>
+		<description> ????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 17 </size>
+	</field>
+	<field>
+		<name> Account Identification 1 </name>
+		<index> 102 </index>
+		<description> Account Identification 1 </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 28 </size>
+	</field>
+	<field>
+		<name> Account Identification 2 </name>
+		<index> 103 </index>
+		<description> Account Identification 2 </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 28 </size>
+	</field>
+	<field>
+		<name> Transaction Description </name>
+		<index> 104 </index>
+		<description> Transaction Description </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 100 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 105 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 106 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 107 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 108 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 109 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 110 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 111 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 112 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 113 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 114 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 115 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 116 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 117 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 118 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 119 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 120 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> National SC Reserved </name>
+		<index> 121 </index>
+		<description> National SC Reserved </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Acquiring Institution Reserved </name>
+		<index> 122 </index>
+		<description> Acquiring Institution Reserved </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Issure Institution Reserved </name>
+		<index> 123 </index>
+		<description> Issure Institution Reserved </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 124 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 125 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 126 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> ????? </name>
+		<index> 127 </index>
+		<description> ??????? </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V2VAR </field_type>
+		<size> 999 </size>
+	</field>
+	<field>
+		<name> Message Authentication Code </name>
+		<index> 128 </index>
+		<description> Message Authentication Code </description>
+		<field_encode> FE_B </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+</field_def>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="CARD_BRAND_TYPE" >
+	<element value="01" desc="VISA" />
+	<element value="02" desc="Master Card" />
+	<element value="03" desc="AMEX" />
+	<element value="04" desc="Diners" />
+	<element value="05" desc="JCB" />
+	<element value="09" desc="Private Label" />
+</choices>

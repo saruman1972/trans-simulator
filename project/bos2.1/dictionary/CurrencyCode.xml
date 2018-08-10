@@ -1,0 +1,5 @@
+<choices name="CURRENCY_CODE" >
+	<element desc="RMB" value="156" />
+	<element desc="HK" value="702" />
+	<element desc="USD" value="840" />
+</choices>

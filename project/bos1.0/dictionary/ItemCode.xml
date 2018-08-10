@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<choices name="ITEM_CODE" >
+	<element value="00001" desc="°¢Ã¨" />
+	<element value="00002" desc="°¢¹·" />
+	<element value="00003" desc="Íæ¾ß" />
+	<element value="00004" desc="Êé" />
+</choices>
